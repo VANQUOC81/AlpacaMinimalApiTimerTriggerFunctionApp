@@ -35,7 +35,7 @@ namespace Holoman.Function
 
             if (myTimer.ScheduleStatus is not null)
             {
-                _logger.LogInformation($"Next timer schedule at: {myTimer.ScheduleStatus.Next.AddMinutes(1)}");
+                _logger.LogInformation($"Next timer schedule at: {myTimer.ScheduleStatus.Next.AddMinutes(15)}");
             }
         }
     }
