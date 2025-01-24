@@ -14,7 +14,7 @@ namespace Holoman.Function
         {
             _logger.LogInformation($"C# Timer trigger function executed at: {DateTime.Now}");
 
-            string apiUrl = "https://az-alpaca-minimal-api.azurewebsites.net/api/alpaca/v1/getclock"; // Replace with your actual API URL
+            string apiUrl = "https://az-alpaca-minimal-api.azurewebsites.net/api/alpaca/v1/wakeup"; // Replace with your actual API URL
 
             try
             {
