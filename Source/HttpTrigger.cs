@@ -5,14 +5,9 @@ using Microsoft.Extensions.Logging;
 
 namespace Company.Function
 {
-    public class HttpTrigger
+    public class HttpTrigger(ILoggerFactory loggerFactory)
     {
-        private readonly ILogger _logger;
-
-        public HttpTrigger(ILoggerFactory loggerFactory)
-        {
-            _logger = loggerFactory.CreateLogger<HttpTrigger>();
-        }
+        private readonly ILogger _logger = loggerFactory.CreateLogger<HttpTrigger>();
 
         [Function("HttpTrigger")]
         public HttpResponseData Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", "post")] HttpRequestData req, string name)

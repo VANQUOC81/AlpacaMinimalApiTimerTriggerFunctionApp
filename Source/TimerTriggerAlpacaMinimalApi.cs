@@ -1,19 +1,14 @@
-using System;
 using Microsoft.Azure.Functions.Worker;
 using Microsoft.Extensions.Logging;
 
-namespace Company.Function
+namespace Holoman.Function
 {
-    public class TimerTrigger1
+    // initialize via primary constructor 
+    public class TimerTriggerAlpacaMinimalApi(ILoggerFactory loggerFactory)
     {
-        private readonly ILogger _logger;
+        private readonly ILogger _logger = loggerFactory.CreateLogger<TimerTriggerAlpacaMinimalApi>();
 
-        public TimerTrigger1(ILoggerFactory loggerFactory)
-        {
-            _logger = loggerFactory.CreateLogger<TimerTrigger1>();
-        }
-
-        [Function("TimerTrigger1")]
+        [Function("TimerTriggerAlpacaMinimalApi")]
         public void Run([TimerTrigger("0 */1 * * * *")] TimerInfo myTimer)
         {
             _logger.LogInformation($"C# Timer trigger function executed at: {DateTime.Now}");

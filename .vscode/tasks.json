@@ -6,7 +6,7 @@
 			"command": "dotnet",
 			"args": [
 				"clean",
-				"${workspaceFolder}/Source/AzureFunctionHelloWorld.csproj",
+				"${workspaceFolder}/Source/AlpacaMinimalApiTimerTriggerFunctionApp.csproj",
 				"/property:GenerateFullPaths=true",
 				"/consoleloggerparameters:NoSummary"
 			],
@@ -18,7 +18,7 @@
 			"command": "dotnet",
 			"args": [
 				"build",
-				"${workspaceFolder}/Source/AzureFunctionHelloWorld.csproj",
+				"${workspaceFolder}/Source/AlpacaMinimalApiTimerTriggerFunctionApp.csproj",
 				"/property:GenerateFullPaths=true",
 				"/consoleloggerparameters:NoSummary"
 			],
@@ -37,7 +37,7 @@
 				"clean",
 				"--configuration",
 				"Release",
-				"${workspaceFolder}/Source/AzureFunctionHelloWorld.csproj",
+				"${workspaceFolder}/Source/AlpacaMinimalApiTimerTriggerFunctionApp.csproj",
 				"/property:GenerateFullPaths=true",
 				"/consoleloggerparameters:NoSummary"
 			],
@@ -51,7 +51,7 @@
 				"publish",
 				"--configuration",
 				"Release",
-				"${workspaceFolder}/Source/AzureFunctionHelloWorld.csproj",
+				"${workspaceFolder}/Source/AlpacaMinimalApiTimerTriggerFunctionApp.csproj",
 				"/property:GenerateFullPaths=true",
 				"/consoleloggerparameters:NoSummary"
 			],
