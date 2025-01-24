@@ -10,7 +10,7 @@ namespace Holoman.Function
         private static readonly HttpClient HttpClient = new();
 
         [Function("KeepAliveFunction")]
-        public async Task Run([TimerTrigger("0 */1 * * * *")] TimerInfo myTimer)
+        public async Task Run([TimerTrigger("0 */15 * * * *")] TimerInfo myTimer)
         {
             _logger.LogInformation($"C# Timer trigger function executed at: {DateTime.Now}");
 
